@@ -1,15 +1,13 @@
-
-
 import React, {Component} from 'react';
 
 class Login extends Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
 
         this.state = {
             username: '',
             password: ''
-        }
+        };
     this.handleLogin = this.handleLogin.bind(this);
 }
 
@@ -22,7 +20,7 @@ handlePasswordChange(pass) {
 }
 
 handleLogin() {
-    alert('{Username: this.state.username Password: this.state.password}');
+    alert(`Username: ${this.state.username} Password: ${this.state.password}`);
 }
 render(){
     return(
